@@ -3,11 +3,13 @@
     padding: 0;
 }
 body{
+    margin: 0;
     text-align: center;
-    background-color:rgb(192, 192, 23);
 }
 footer{
     text-align: start;
+    transition: all 1.5s;
+
 }
 
 .detailsContainer{
@@ -19,18 +21,20 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
+    transition: all 1.5s;
 }
 .aboutContent:before{
     opacity: 0.3;
 }
 .aboutEvent{
     display:flex;
+    position: relative;
     flex-flow: row wrap;
-    height: 100%;
+    justify-content: center;
     align-items: center;
-    padding: 20% 5% 10% 5%;
-    height: 500px;
+    padding: 35% 5% 10% 5%;
+    height: 600px;
+    transition: all 1.5s;
     
 }
 .aboutContent{
@@ -38,6 +42,7 @@ footer{
     flex-basis: 50%;
     text-align: start;
     z-index: 5;
+    transition: all 1.5s;
 }
 .eventImage{
     flex-basis: 40%;
@@ -48,10 +53,13 @@ footer{
     background-position: center;
     background-size:cover;
     margin-left: 2%;
+    transition: all 1.5s;
 
 }
 h1{
     z-index:5;
+    transition: all 1.5s;
+
 }
 .overlay{
     z-index: 1;
@@ -60,8 +68,10 @@ h1{
     top: 0;
     background-color: rgba(255,255,255,0.4);
     width: 100%;
-    height: 500px;
+    height: 100%;
     overflow: hidden;
+    transition: all 1.5s;
+
 }
 .prize{
     margin-bottom: 10%;
@@ -78,13 +88,16 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position:center;
+    transition: all 1.5s;
+
+    /* background-position:start; */
 }
 .phoneOverlay{
     position: absolute;
     width: 100%;
-    height: 37%;
+    height: 250px;
     background-color: rgba(0, 0, 0, 0.7);
+
 }
 .btnDiv{
     display:flex;
@@ -95,11 +108,11 @@ h1{
 .phone{
     flex-basis: 70%;
     z-index:5;
+    text-shadow: 2px 2px 10px rgb(8, 129, 129);
 }
-.phone *{
-    text-shadow: 2px 2px 30px black;
+.section__title{
+    margin-top:5%;
 }
-
 
 
 /* =====================REGISTER CSS========================= */
@@ -147,3 +160,148 @@ h1{
     }
   }
   
+
+  /* =============================MEDIA QUERIES========================================= */
+
+  @media screen and (max-width: 900px){
+    .eventImage{
+        margin-bottom: 3%;
+        flex-basis: 40%;
+        height:300px;
+        margin-left:0%
+    }
+    .aboutEvent{
+        padding: 25% 5% 10% 5%;
+        justify-content: flex-start;
+    }
+  
+    .aboutContent{
+        opacity: 1;
+        flex-basis: 60%;
+        text-align: start;
+        z-index: 5;
+    }
+    body{
+        margin: 0 ;
+    }
+    .rules{
+        margin: 0 10%;
+    }
+    .phone{
+        flex-basis: 50%;
+    }
+
+}
+  @media screen and (max-width: 550px){
+    .eventImage{
+        margin-bottom: 3%;
+        flex-basis: 50%;
+        margin-left: 5%;
+    }
+    .aboutEvent{
+        padding: 35% 1% 10% 5%;
+    }
+    .aboutContent{
+        opacity: 1;
+        flex-basis: 40%;
+        text-align: start;
+        z-index: 5;
+    }
+    body{
+        margin: 0 ;
+    }
+    .rules{
+        margin: 0 5%;
+    }
+    .phone{
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .eventImage{
+        margin-bottom: 3%;
+        order: 1;
+        flex-basis: 80%;
+    }
+    .aboutEvent{
+        justify-content: center;
+        padding: 35% 5% 10% 5%;
+    }
+    .aboutContent{
+        order: 5;
+        opacity: 1;
+        flex-basis: 90%;
+        text-align: start;
+        z-index: 5;
+    }
+    body{
+        margin: 0 ;
+    }
+    .rules{
+        margin: 0 5%;
+    }
+    .phone{
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .eventImage{
+        margin-bottom: 3%;
+        order: 1;
+        flex-basis: 80%;
+    }
+    .aboutEvent{
+        padding: 35% 0 10% 0;
+        
+    }
+    .aboutContent{
+        order: 5;
+        opacity: 1;
+        flex-basis: 90%;
+        text-align: start;
+        z-index: 5;
+    }
+    body{
+        margin: 0 ;
+    }
+    .rules{
+        margin: 0 5%;
+    }
+    .phone{
+        flex-basis: 50%;
+    }
+}
+@media screen and (min-width: 900px){
+    .eventImage{
+        margin-bottom: 3%;
+        flex-basis: 30%;
+        height:400px;
+        margin-left:0%
+    }
+    .aboutEvent{
+        padding: 20% 5% 10% 5%;
+        justify-content: flex-start;
+        height: 750px;
+    }
+  
+    .aboutContent{
+        opacity: 1;
+        flex-basis: 60%;
+        text-align: start;
+        z-index: 5;
+    }
+    body{
+        margin: 0 ;
+    }
+    .rules{
+        margin: 0 20%;
+    }
+    .phone{
+        flex-basis: 50%;
+    }
+
+}
