@@ -1111,6 +1111,7 @@ input {
   .container {
     max-width: 1024px;
   }
+}
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   body {
@@ -1121,4 +1122,3 @@ input {
   }
 
 }
-
