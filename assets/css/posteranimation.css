@@ -1,0 +1,32 @@
+.poster {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 0em;
+    bottom: 25%;
+    animation-name: bottomup;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    box-sizing: border-box;
+}
+
+.poster-img {
+    height: 30em;
+    width: 40em;
+}
+
+@keyframes bottomup {
+    from {
+        bottom: -30em;
+    }
+
+    to {
+        bottom: 25%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .poster {
+        display: none;
+    }
+}
