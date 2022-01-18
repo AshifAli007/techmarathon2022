@@ -352,7 +352,7 @@ input {
 }
 
 .home__social-link {
-  font-size: 3rem;
+  font-size: 1.8rem;
   width: max-content;
 }
 
@@ -890,6 +890,10 @@ input {
   background-size: contain;
   background-position: center;
   border-radius: 5%;
+}
+
+.sponsor__card:nth-child(n+1):hover {
+  cursor: pointer;
 }
 
 /*=============== MEDIA QUERIES ===============*/
