@@ -11,7 +11,7 @@ var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('playerab', {
         height: '390',
-        width: '640',
+        width: '716.8',
         videoId: 'w6qtmKg8TTw',
         playerVars: {
             'playsinline': 1,
@@ -43,6 +43,16 @@ function onPlayerStateChange(event) {
         setTimeout(stopVideo, 76000);
         done = true;
     }
+    console.log("hello")
+    const videoIcon = document.getElementById('video-icon');
+    let playerState = player.getPlayerState();
+    if (playerState == 1) {
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
+    } else if (playerState == 2 || playerState == -1) {
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
+    }
 }
 
 function stopVideo() {
@@ -65,6 +75,7 @@ function playPause() {
         videoIcon.classList.add('ri-pause-line')
         videoIcon.classList.remove('ri-play-line')
     } else if (playerState == 0) {
-
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
     }
 }

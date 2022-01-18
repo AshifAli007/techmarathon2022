@@ -575,7 +575,7 @@ input {
 
 .video__button {
   position: absolute;
-  right: 1rem;
+  right: -1rem;
   bottom: -1rem;
   padding: 1rem 1.5rem;
 }
