@@ -37,6 +37,8 @@ function scrollHeader(){
     if(this.scrollY >= 100) 
     {
         header.classList.add('scroll-header'); 
+        let checkDark = document.body.classList[selectedTheme === 'dark'? true : false];
+        if (checkDark == false)
         document.getElementById('nav__logo-img').src = "./assets/img/favicon-black.png";
     }
     else 
