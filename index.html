@@ -254,26 +254,26 @@
                             <a href="./webgators.html" target="_blank">
                                 <img src="assets/images/graphics/01.JPG" alt="" class="discover__img">
                             </a>
-                            
-     
+
+
                         </div>
                         <div class="discover__card swiper-slide">
                             <a href="./techescapade.html" target="_blank">
                             <img src="assets/images/graphics/02.JPG" alt="" class="discover__img">
                         </a>
-                          
+
                         </div>
                         <div class="discover__card swiper-slide" >
                             <a href="./algowls.html" target="_blank">
                             <img src="assets/images/graphics/03.JPG" alt="" class="discover__img">
                         </a>
-                           
+
                         </div>
                         <div class="discover__card swiper-slide">
                             <a href="./codebenders.html" target="_blank">
                             <img src="assets/images/graphics/04.JPG" alt="" class="discover__img">
                         </a>
-                            
+
                         </div>
 
                         <div class="discover__card swiper-slide">
@@ -290,7 +290,7 @@
 
                     </div>
                 </div>
-                
+
             </section> -->
 
         <!--==================== VIDEO ====================-->
@@ -302,11 +302,14 @@
                 </p>
 
                 <div class="video__content">
-                    <video id="video-file" poster="./assets/images/videothumb.png">
-                        <source src="assets/video/techmarathon.mp4" type="video/mp4">
+                    <div id="playerab"></div>
+                    <!-- <video id="video-file" poster="./assets/images/videothumb.png">
+                         <source src="assets/video/techmarathon.mp4" type="video/mp4">
                     </video>
-
-                    <button class="button button--flex video__button" id="video-button">
+                    <iframe id="video-file" width="560" height="315" src="https://www.youtube.com/embed/w6qtmKg8TTw"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+                    <button class="button button--flex video__button" id="video-button" onclick="playPause()">
                         <i class="ri-play-line video__button-icon" id="video-icon"></i>
                     </button>
                 </div>
@@ -358,7 +361,7 @@
                 <!--==================== PLACES CARD 5 ====================-->
                 <!-- <div class="place__card">
                         <img src="assets/img/place5.jpg" alt="" class="place__img">
-                        
+
                         <div class="place__content">
                             <span class="place__rating">
                                 <i class="ri-star-line place__rating-icon"></i>
@@ -478,7 +481,7 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>
-
+        <script src="assets/js/yt.js"></script>
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
 
@@ -488,6 +491,7 @@
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/animation.js"></script>
+
 </body>
 
 </html>
