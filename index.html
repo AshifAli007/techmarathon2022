@@ -1,232 +1,245 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Techmarathon</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Techmarathon</a>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#discover" class="nav__link">Events</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#place" class="nav__link">Sponsors</a>
-                        </li>
-                    </ul>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                    <div class="nav__dark">
-                        <!-- Theme change button -->
-                        <span class="change-theme-name">Dark mode</span>
-                        <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    </div>
+    <title>Techmarathon</title>
+</head>
 
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Techmarathon</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discover" class="nav__link">Events</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#place" class="nav__link">Sponsors</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home large-header" id="home">
+            <!-- <img src="assets/img/tech.jpg" alt="" class="home__img"> -->
+            <canvas id="demo-canvas"></canvas>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Discover Techmarathon</span>
+                    <h1 class="home__data-title">Explore <b>It's</b> <br> <b>Events</b></h1>
+                    <a href="#discover" class="button">Explore</a>
+
                 </div>
-            </nav>
-        </header>
 
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home large-header" id="home">
-                <!-- <img src="assets/img/tech.jpg" alt="" class="home__img"> -->
-                <canvas id="demo-canvas"></canvas>
-                <div class="home__container container grid">
-                    <div class="home__data">
-                        <span class="home__data-subtitle">Discover Techmarathon</span>
-                        <h1 class="home__data-title">Explore <b>It's</b> <br>  <b>Events</b></h1>
-                        <a href="#discover" class="button">Explore</a>
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>
+        </section>
 
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About Techmarathon</h2>
+                    <p class="about__description">A long journey of ten years has put TechMarathon
+                        on its pedestal today. It has grown year by year enormously
+                        reflecting the blood, sweat and tears of the hands behind it.
+                        Beginning its journey in 2010 as the 1st Technical Fest of
+                        Deen Dayal Upadhyaya College, TechMarathon
+                        has now become one of the most yielding and
+                        prominent event in the DU circuit..
+                    </p>
+                    <a href="#" class="button">Sponsors</a>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about1.jpg" alt="" class="about__img-one">
                     </div>
 
-                    <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                    </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title">More Information <br> About Techmarathon</h2>
-                        <p class="about__description">A long journey of ten years has put TechMarathon
-                            on its pedestal today. It has grown year by year enormously
-                            reflecting the blood, sweat and tears of the hands behind it.
-                            Beginning its journey in 2010 as the 1st Technical Fest of
-                            Deen Dayal Upadhyaya College, TechMarathon
-                            has now become one of the most yielding and
-                            prominent event in the DU circuit..
-                        </p>
-                        <a href="#" class="button">Sponsors</a>
-                    </div>
-
-                    <div class="about__img">
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
-                        </div>
-
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
-                        </div>
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about2.jpg" alt="" class="about__img-two">
                     </div>
                 </div>
-            </section>
-            
-            <!--==================== DISCOVER ====================-->
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Technical <br> Events</h2>
-                
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <a href="./webgators.html" target="_blank">
-                                <img src="assets/images/webgators.png" alt="" class="discover__img">
-                            </a>
-                            
-     
-                        </div>
-                        <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <a href="./techescapade.html" target="_blank">
+            </div>
+        </section>
+
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Technical <br> Events</h2>
+
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./webgators.html" target="_blank">
+                            <img src="assets/images/webgators.png" alt="" class="discover__img">
+                        </a>
+
+
+                    </div>
+                    <!--==================== DISCOVER 2 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./techescapade.html" target="_blank">
                             <img src="assets/images/techEscapade.jpg" alt="" class="discover__img">
                         </a>
-                          
-                        </div>
-                        <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide" >
-                            <a href="./algowls.html" target="_blank">
+
+                    </div>
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./algowls.html" target="_blank">
                             <img src="assets/images/algoOwls.png" alt="" class="discover__img">
                         </a>
-                           
-                        </div>
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <a href="./codebenders.html" target="_blank">
+
+                    </div>
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./codebenders.html" target="_blank">
                             <img src="assets/images/codeBenders.png" alt="" class="discover__img">
                         </a>
-                            
-                        </div>
 
-                        <!--==================== DISCOVER 5 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <a href="./bumblejumble.html" target="_blank">
+                    </div>
+
+                    <!--==================== DISCOVER 5 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./bumblejumble.html" target="_blank">
                             <img src="assets/images/bumbleJumble.png" alt="" class="discover__img">
                         </a>
-                        </div>
-                        <!--==================== DISCOVER 6 ====================-->
+                    </div>
+                    <!--==================== DISCOVER 6 ====================-->
 
-                        <div class="discover__card swiper-slide">
-                            <a href="./battleofbytes.html" target="_blank">
+                    <div class="discover__card swiper-slide">
+                        <a href="./battleofbytes.html" target="_blank">
                             <img src="assets/images/battleOfBytes.jpg" alt="" class="discover__img">
-                            </a>
-                        </div>
-
+                        </a>
                     </div>
+
                 </div>
-            </section>
-            <!--==================== DISCOVER ====================-->
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Online <br> Gaming</h2>
-                
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
+            </div>
+        </section>
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Online <br> Gaming</h2>
+
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./bgmi.html" target="_blank">
                             <img src="assets/images/bgmi.jpg" alt="" class="discover__img">
-            
-                        </div>
+                        </a>
+                    </div>
 
-                        <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
+                    <!--==================== DISCOVER 2 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./valorant.html" target="_blank">
                             <img src="assets/images/valorant.jpg" alt="" class="discover__img">
-                        
-                        </div>
+                        </a>
+                    </div>
 
-                        <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide">
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./football.html" target="_blank">
                             <img src="assets/images/football.jpg" alt="" class="discover__img">
-                           
-                        </div>
+                        </a>
+                    </div>
 
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./ludo.html" target="_blank">
                             <img src="assets/images/ludo.jpg" alt="" class="discover__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </section>
-            <!--==================== Non - Tech ====================-->
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Non-Technical <br> Events</h2>
-                
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
+            </div>
+        </section>
+        <!--==================== Non - Tech ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Non-Technical <br> Events</h2>
+
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./bamboozled.html" target="_blank">
                             <img src="assets/images/bamboozled.png" alt="" class="discover__img">
-            
-                        </div>
+                        </a>
+                    </div>
 
-                        <!--==================== DISCOVER 3 ====================-->
-                        <div class="discover__card swiper-slide">
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./" target="_blank">
                             <img src="assets/images/techWars.png" alt="" class="discover__img">
-                           
-                        </div>
+                        </a>
+                    </div>
 
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./" target="_blank">
                             <img src="assets/images/tvFandom.png" alt="" class="discover__img">
-                        </div>
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
+                        </a>
+                    </div>
+                    <!--==================== DISCOVER 4 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <a href="./" target="_blank">
                             <img src="assets/images/socialHunt.png" alt="" class="discover__img">
-                        </div>
+                        </a>
                     </div>
                 </div>
-                </div>
-            </section>
-            <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
-                <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+            </div>
+            </div>
+        </section>
+        <!--==================== EXPERIENCE ====================-->
+        <section class="experience section">
+            <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
 
-                <div class="experience__container container grid">
-                    <!-- <div class="experience__content grid">
+            <div class="experience__container container grid">
+                <!-- <div class="experience__content grid">
                         <div class="experience__data">
                             <h2 class="experience__number">10</h2>
                             <span class="experience__description">Year <br> Experience</span>
@@ -243,78 +256,78 @@
                         </div>
                     </div> -->
 
-                    <div class="experience__img grid">
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
-                        </div>
-                        
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
-                        </div>
+                <div class="experience__img grid">
+                    <div class="experience__overlay">
+                        <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                    </div>
+
+                    <div class="experience__overlay">
+                        <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== VIDEO ====================-->
-            <section class="video section">
-                <h2 class="section__title">Video Insights</h2>
+        <!--==================== VIDEO ====================-->
+        <section class="video section">
+            <h2 class="section__title">Video Insights</h2>
 
-                <div class="video__container container">
-                    <p class="video__description">Find out the previos years experience
-                    </p>
+            <div class="video__container container">
+                <p class="video__description">Find out the previos years experience
+                </p>
 
-                    <div class="video__content">
-                        <video id="video-file">
-                            <source src="assets/video/techmarathon.mp4" type="video/mp4">
-                        </video>
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/techmarathon.mp4" type="video/mp4">
+                    </video>
 
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
-                    </div>
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== PLACES ====================-->
-            <section class="place section" id="place">
-                <h2 class="section__title">Sponsors</h2>
+        <!--==================== PLACES ====================-->
+        <section class="place section" id="place">
+            <h2 class="section__title">Sponsors</h2>
 
-                <div class="sponsor-container">
-                    <!--==================== PLACES CARD 1 ====================-->
-                    <div id="sponsor__card1"  class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor6.jpg" alt="" class="place__img"> -->
-                    </div>
+            <div class="sponsor-container">
+                <!--==================== PLACES CARD 1 ====================-->
+                <div id="sponsor__card1" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor6.jpg" alt="" class="place__img"> -->
+                </div>
 
-                    <!--==================== PLACES CARD 2 ====================-->
-                    <div id="sponsor__card2" class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor1.jpg" alt="" class="place__img"> -->
-                    </div>
+                <!--==================== PLACES CARD 2 ====================-->
+                <div id="sponsor__card2" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor1.jpg" alt="" class="place__img"> -->
+                </div>
 
-                    <!--==================== PLACES CARD 3 ====================-->
-                    <div id="sponsor__card3" class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor3.png" alt="" class="place__img"> -->
-                        
-                        
-                    </div>
+                <!--==================== PLACES CARD 3 ====================-->
+                <div id="sponsor__card3" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor3.png" alt="" class="place__img"> -->
 
-                    <!--==================== PLACES CARD 4 ====================-->
-                    <div id="sponsor__card4" class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor4.png" alt="" class="place__img"> -->
-                        
-                    </div>
-                    <!--==================== PLACES CARD 5 ====================-->
-                    <div id="sponsor__card5" class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor5.png" alt="" class="place__img"> -->
-                        
-                    </div>
-                    <!--==================== PLACES CARD 6 ====================-->
-                    <div id="sponsor__card6" class="sponsor__card">
-                        <!-- <img src="assets/images/sponsors/sponsor2.png" alt="" class="place__img"> -->
-                        
-                    </div>
 
-                    <!--==================== PLACES CARD 5 ====================-->
-                    <!-- <div class="place__card">
+                </div>
+
+                <!--==================== PLACES CARD 4 ====================-->
+                <div id="sponsor__card4" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor4.png" alt="" class="place__img"> -->
+
+                </div>
+                <!--==================== PLACES CARD 5 ====================-->
+                <div id="sponsor__card5" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor5.png" alt="" class="place__img"> -->
+
+                </div>
+                <!--==================== PLACES CARD 6 ====================-->
+                <div id="sponsor__card6" class="sponsor__card">
+                    <!-- <img src="assets/images/sponsors/sponsor2.png" alt="" class="place__img"> -->
+
+                </div>
+
+                <!--==================== PLACES CARD 5 ====================-->
+                <!-- <div class="place__card">
                         <img src="assets/img/place5.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
@@ -334,28 +347,28 @@
                             <i class="ri-arrow-right-line"></i>
                         </button>
                     </div> -->
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
-                <div class="subscribe__bg">
-                    <div class="subscribe__container container">
-                        <h2 class="section__title subscribe__title">Contact Us <br> Got any query? </h2>
-                        <p class="subscribe__description">Send us a message we will try to reply
-                        </p>
-    
-                        <form action="" class="subscribe__form">
-                            <input type="text" placeholder="Enter email" class="subscribe__input">
-                            <input type="text" placeholder="Enter message" class="subscribe__input">
-    
-                            <button class="button">
-                                Send
-                            </button>
-                        </form>
-                    </div>
+        <!--==================== SUBSCRIBE ====================-->
+        <section class="subscribe section">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Contact Us <br> Got any query? </h2>
+                    <p class="subscribe__description">Send us a message we will try to reply
+                    </p>
+
+                    <form action="" class="subscribe__form">
+                        <input type="text" placeholder="Enter email" class="subscribe__input">
+                        <input type="text" placeholder="Enter message" class="subscribe__input">
+
+                        <button class="button">
+                            Send
+                        </button>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -381,7 +394,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <div class="footer__data">
                         <h3 class="footer__subtitle">About</h3>
                         <ul>
@@ -396,7 +409,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Contact</h3>
                         <ul>
@@ -411,7 +424,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Support</h3>
                         <ul>
@@ -434,19 +447,20 @@
             </div>
         </footer>
 
-         <!--========== SCROLL UP ==========-->
+        <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>
 
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
-        
+
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/animation.js"></script>
-    </body>
+</body>
+
 </html>
