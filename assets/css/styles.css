@@ -1207,6 +1207,7 @@ input {
   .container {
     max-width: 1024px;
   }
+
 }
 
 /* For tall screens on mobiles y desktop*/
@@ -1219,5 +1220,66 @@ input {
   .home__img {
     height: 640px;
   }
+}
 
+@media screen and (max-width: 1023px) {
+  iframe {
+    height: 25rem;
+    width: 120%;
+    position: relative;
+    right: 3em;
+  }
+
+  .video__button {
+    right: -7em;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  iframe {
+    height: 20rem;
+    width: 130%;
+    position: relative;
+    right: 4em;
+  }
+
+  .video__button {
+    right: -7em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  iframe {
+    height: 19rem;
+    width: 130%;
+    position: relative;
+    right: 4em;
+  }
+
+  .video__button {
+    right: -7em;
+  }
+}
+
+/*
+@media screen and (max-width: 600px) {
+  iframe {
+    position: relative;
+    left: 2em;
+    right: 2em;
+    width: 100%;
+    height: 30rem;
+  }
+
+  
+}*/
+
+@media screen and (max-width: 567px) {
+  iframe {
+    position: relative;
+    left: 0rem;
+    width: 100%;
+    height: 15rem;
+
+  }
 }
