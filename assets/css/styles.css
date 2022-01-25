@@ -892,6 +892,14 @@ input {
   border-radius: 5%;
 }
 
+#sponsor__card7 {
+  background: url(../images/sponsors/sponsor7.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 5%;
+}
+
 .sponsor__card:nth-child(n+1):hover {
   cursor: pointer;
 }
